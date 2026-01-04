@@ -26,4 +26,4 @@ As part of the internship requirements, I have post on linkedIn explaining the l
 Clone the repository: git clone https://github.com/ketkigurav/CodeAlpha_URLShortener.git
 
 Install dependencies: npm install 
-Start the server: npm start 
+Start the server: npm start  
