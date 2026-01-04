@@ -12,13 +12,16 @@ Features:
 3. Redirection: A redirect route that takes the user to the original website when the short URL is accessed.
 4. Frontend (Optional): A basic interface to input URLs and view results.
 
-🛠️ Tech Stack:
+Technical Stack:
 
-Language: Node.js  
 
-Framework: Express.js
+Backend: Node.js, Express.js 
+
 
 Database: MongoDB 
+
+
+Tools: Mongoose, Dotenv, Git/GitHub
 
 📺 Project Demonstration:
 As part of the internship requirements, I have post on linkedIn explaining the logic and workflow of this project.
