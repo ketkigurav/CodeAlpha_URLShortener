@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeAlpha URL Shortener</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        input { padding: 10px; width: 300px; }
+        button { padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; }
+        #result { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>CodeAlpha URL Shortener</h2>
+    <input type="text" id="longUrl" placeholder="Paste long URL here...">
+    <button onclick="shorten()">Shorten</button>
+    <div id="result"></div>
+
+    <script>
+        async function shorten() {
+            const longUrl = document.getElementById('longUrl').value;
+            const res = await fetch('/shorten', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ longUrl })
+            });
+            const data = await res.json();
+            document.getElementById('result').innerHTML = 
+                `Short URL: <a href="${data.short}" target="_blank">${data.short}</a>`;
+        }
+    </script>
+</body>
+</html>

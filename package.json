@@ -1,0 +1,22 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "CodeAlpha_URLShortener\r This project is part of my Backend Development Internship at CodeAlpha. It is a simple yet functional URL Shortener built to handle long URLs and redirect them using unique short codes.",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.1",
+    "nanoid": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
